@@ -27,7 +27,7 @@ function Snake() {  //constructor function
             var pos = this.tail[i];
             var d = dist(this.x, this.y, pos.x, pos.y);
             if (d < 1){    //if distance beetween last position and current position touched is less than one then snake dies. Tail returns empty and total returns to initial value 0
-                alert('Want to start again?');   
+                alert('Sembra che non sia riuscito a mangiare abbastanza polpette da diventare invincibile! \nRiprova!');   
                 this.total = 0; 
                 this.tail = [];
             }

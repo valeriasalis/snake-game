@@ -9,7 +9,7 @@ function setup() {
   createCanvas(600, 600);
   s = new Snake();
   frameRate(10);  //we slow the frame rate so it becomes similar to the old Snake game display
-  alert('Prima di cominciare leggi le istruzioni qui sotto. \nPer cominciare poi premi INVIO!');  //first time you open the fame it gives you the time to prepare yourself
+  alert('Prima di cominciare leggi le istruzioni qui accanto. \nPer cominciare poi premi INVIO!');  //first time you open the fame it gives you the time to prepare yourself
   pickLocation();
 }
 
