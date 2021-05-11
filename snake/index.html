@@ -11,11 +11,18 @@
       margin: 100;
     }
 
-    div {
+    .instructions {
       width: 400px;
       border: red 5px solid;
       padding: 10px 10px 10px 30px;
     }
+
+    img {
+      margin: 10px;
+      width: 300px;
+      height: 200px;
+    }
+
   </style>
   <script src="../p5.js"></script>
   <script src="../addons/p5.sound.min.js"></script>
@@ -24,7 +31,7 @@
 </head>
 
 <body>
-  <div id="p5_loading">
+  <div id="p5_loading" class="instructions">
     <h1>ISTRUZIONI</h1>
     <p>Questo gioco è conosciuto con il suo nome inglese Snake ovvero "serpente" in italiano. <br> <br>
       Prenderai il comando del quadratino bianco il quale rappresenta il personaggio del gioco: il serpente! <br><br>
@@ -34,8 +41,12 @@
       Lo scopo del gioco è mangiare più polpette possibile! <br><br>
 
       Ricorda: non puoi girarti su te stesso, ti stritoleresti! <br><br>
-      
-      In bocca al lupo!
+
+      Per spostarti utilizza questi tasti della tastiera <br>
+    <div>
+      <img src="../arrowkeys.jpg" alt="">
+    </div>
+    In bocca al lupo!
     </p>
   </div>
 </body>
