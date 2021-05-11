@@ -6,14 +6,14 @@ var scl = 20;
 var food;
 function setup() {
   alert('Prima di cominciare leggi le istruzioni qui accanto. \nPer cominciare poi premi INVIO!');  //first time you open the fame it gives you the time to prepare yourself
-  var fps = parseFloat(prompt("Scegli un numero da 1 a 50. Sarà la velocità a cui andrà il serpente, fai attenzione!",)); 
+  var fps = prompt("Scegli un numero da 1 a 50. Sarà la velocità a cui andrà il serpente, fai attenzione!",); 
   // put setup code here - p5 requires two basic functions: setup() and draw()
   createCanvas(600, 600);
   s = new Snake();
-  if (fps === "") {
+  if (isNaN(parseFloat(fps))) {
     frameRate(10);
   } else {
-    frameRate(fps);  //frameRate() is a p5 function used to set up the frames per second or the number of times the page will refresh. We started with frameRate of 10. //we slow the frame rate so it becomes similar to the old Snake game display
+    frameRate(parseFloat(fps));  //frameRate() is a p5 function used to set up the frames per second or the number of times the page will refresh. We started with frameRate of 10. //we slow the frame rate so it becomes similar to the old Snake game display
   }
   pickLocation();
 }
